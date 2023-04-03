@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<style>
+    .card:hover{
+    width: 300px;
+    margin: 30px;
+    box-shadow: 0 15px 15px 0 rgba(0, 0, 0, 0.3);
+    opacity: 0.8;
+    }
+</style>
+<div class="container-fluid">
+ <div class="row">
+  <div class="col-sm-3 mb-3 mb-sm-0">
+    <div class="card text-center">
+      <img src="https://img.freepik.com/free-vector/address-illustration-concept_114360-301.jpg?w=740&t=st=1680525028~exp=1680525628~hmac=182ed938acca0d42fd072de4394a225aa71195d94e1a011fb4fe779afc7348aa" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Phone number tracker </h5>
+        <p class="card-text">This tool helps to track phone number information.</p>
+        <a href="/numbertrack" class="btn btn-primary">Use</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-3 ">
+    <div class="card text-center ">
+      <img src="https://img.freepik.com/free-vector/paper-pencil-cartoon-icon-illustration-education-object-icon-concept-isolated-flat-cartoon-style_138676-2137.jpg?w=740&t=st=1680524302~exp=1680524902~hmac=9a6692d7c538c7e58f3d8050f9fbbda0b715c7c51993c2de06f6c4eed62935bc" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Text to handwriting</h5>
+        <p class="card-text">This tool helps to convert text into handwritten text.</p>
+        <a href="/txttohand" class="btn btn-primary">Use</a>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+{% endblock  %}

@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<style>
+    .form{
+    justify-content: center;
+    display: flex;
+    margin: 40px 50px;
+    border: 3px solid blue;
+    padding: 30px;
+    background-color: rgb(208, 205, 248);
+    }
+    .table {
+    margin: auto;
+    border: 3px solid blue;
+    padding: 30px;
+    background-color: rgb(208, 205, 248);
+    }
+    #btn-1{
+    margin-left: 20px;
+    width: 150px;
+    }
+</style>
+<form class="form" action="" method="post">
+        {% csrf_token %}
+        Enter your text here = <textarea  rows="3" cols="130" name="texted" id="" required ></textarea>
+        <button id="btn-1" type="submit">Submit</button>
+</form>
+{% endblock  %}
